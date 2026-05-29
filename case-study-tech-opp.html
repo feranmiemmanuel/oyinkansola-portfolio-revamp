@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Opp Africa — Case Study</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          },
+          colors: {
+            brand: '#194471',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans bg-white text-zinc-900">
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-12 lg:py-6 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold tracking-tighter">O.</a>
+      <div class="flex gap-8">
+        <a href="index.html#work" class="text-sm font-medium relative group text-zinc-900 transition-colors">
+          Work
+          <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left scale-x-100 transition-transform duration-300"></span>
+        </a>
+        <a href="index.html#about" class="text-sm font-medium relative group text-zinc-500 hover:text-zinc-900 transition-colors">
+          About
+          <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+        </a>
+        <a href="index.html#contact" class="text-sm font-medium relative group text-zinc-500 hover:text-zinc-900 transition-colors">
+          Contact
+          <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-1 pt-24">
+
+    <!-- ── Project Title ── -->
+    <div class="max-w-4xl mx-auto px-6 lg:px-12 pt-16 pb-12 text-center">
+      <p class="text-sm font-medium text-zinc-400 uppercase tracking-widest mb-4">Case Study</p>
+      <h1 class="text-5xl lg:text-7xl font-serif font-medium mb-6">Tech Opp Africa</h1>
+      <p class="text-lg text-zinc-500 max-w-2xl mx-auto leading-relaxed">
+        Tech Opp is a non-profit organization dedicated to connecting children to create tech opportunities across Africa.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mt-8">
+        <span class="px-4 py-1.5 rounded-full bg-zinc-100 text-zinc-600 text-sm">Figma</span>
+        <span class="px-4 py-1.5 rounded-full bg-zinc-100 text-zinc-600 text-sm">UI Design</span>
+        <span class="px-4 py-1.5 rounded-full bg-zinc-100 text-zinc-600 text-sm">Web</span>
+      </div>
+    </div>
+
+    <!-- ── Hero Mockup ── -->
+    <div class="bg-[#0d1f3c] px-6 py-16 lg:py-24">
+      <div class="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+        <img src="assets/project-tech-opp.png" alt="Tech Opp Africa mockup" class="w-full h-auto object-cover">
+      </div>
+    </div>
+
+    <!-- ── Overview ── -->
+    <section class="max-w-5xl mx-auto px-6 lg:px-12 py-20">
+      <h2 class="text-sm font-bold uppercase tracking-[0.2em] text-amber-500 mb-8">Overview</h2>
+      <p class="text-lg text-zinc-600 leading-relaxed max-w-3xl mb-12">
+        Tech Opp is a non-profit platform designed to bridge the digital divide by increasing access to information systems and communities in technology. The goal? To create an engaging, accessible, and informative platform that empowers young learners and those wanting to develop their tech skills.
+      </p>
+      <div class="grid grid-cols-3 gap-8 border-t border-zinc-200 pt-12">
+        <div>
+          <p class="text-4xl font-serif font-medium text-[#194471]">250</p>
+          <p class="text-zinc-500 mt-1">NGO Partners</p>
+        </div>
+        <div>
+          <p class="text-4xl font-serif font-medium text-[#194471]">7</p>
+          <p class="text-zinc-500 mt-1">Regions</p>
+        </div>
+        <div>
+          <p class="text-4xl font-serif font-medium text-[#194471]">1 week</p>
+          <p class="text-zinc-500 mt-1">Timeline</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem Statement & Goal ── -->
+    <section class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-zinc-200">
+      <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+        <div>
+          <h2 class="text-xl font-semibold mb-6">Problem Statement</h2>
+          <p class="text-zinc-500 leading-relaxed">
+            Access to tech education is still a luxury for many young people, especially in Africa. Existing solutions are often too complex, inaccessible, or poorly designed — which means many users in the key target demographic are not included and lose a unique opportunity to develop skills in a critical period of their lives.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold mb-6">Goal</h2>
+          <ul class="flex flex-col gap-4 text-zinc-500 leading-relaxed">
+            <li class="flex gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#194471] mt-2.5 flex-shrink-0"></span>
+              Understanding about user needs and providing solutions that meet those needs.
+            </li>
+            <li class="flex gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#194471] mt-2.5 flex-shrink-0"></span>
+              Design considerations that prioritize accessibility and inclusivity for young learners.
+            </li>
+            <li class="flex gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#194471] mt-2.5 flex-shrink-0"></span>
+              A design solution that effectively addresses the problem given the context and constraints.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Typography & Color ── -->
+    <section class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-zinc-200">
+      <h2 class="text-xl font-semibold mb-10">Typography and Color</h2>
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Primary color -->
+        <div class="rounded-xl overflow-hidden border border-zinc-200">
+          <div class="h-36" style="background-color:#194471;"></div>
+          <div class="px-5 py-4 bg-white">
+            <p class="font-mono text-sm text-zinc-500">#194471</p>
+            <p class="text-sm text-zinc-400 mt-1">Primary Color</p>
+          </div>
+        </div>
+        <!-- Text color -->
+        <div class="rounded-xl overflow-hidden border border-zinc-200">
+          <div class="h-36" style="background-color:#483740;"></div>
+          <div class="px-5 py-4 bg-white">
+            <p class="font-mono text-sm text-zinc-500">#483740</p>
+            <p class="text-sm text-zinc-400 mt-1">Text Color</p>
+          </div>
+        </div>
+      </div>
+      <!-- Font specimens -->
+      <div class="grid md:grid-cols-2 gap-12 border-t border-zinc-200 pt-10">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-zinc-400 mb-4">Primary Typeface</p>
+          <p class="font-serif text-4xl font-medium leading-tight">Playfair Display</p>
+          <p class="font-serif text-xl text-zinc-400 mt-2 italic">Aa Bb Cc Dd Ee Ff Gg</p>
+          <p class="font-serif text-zinc-500 mt-2 leading-relaxed text-sm">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-widest text-zinc-400 mb-4">Secondary Typeface</p>
+          <p class="text-4xl font-semibold leading-tight">Semibold</p>
+          <p class="text-xl text-zinc-400 mt-2">Inter / 600</p>
+          <p class="text-zinc-500 mt-2 leading-relaxed text-sm">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Homepage & About Us screens ── -->
+    <section class="py-20 px-6 lg:px-12" style="background-color: #dde8f5;">
+      <div class="max-w-6xl mx-auto bg-white/60 rounded-3xl p-8 lg:p-12 shadow-sm">
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <!-- Homepage mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-white">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-home.png" alt="Tech Opp homepage design" class="w-full h-auto object-cover block">
+          </div>
+
+          <!-- About Us mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-white">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-about.png" alt="Tech Opp About Us page design" class="w-full h-auto object-cover block">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Design Process ── -->
+    <section class="max-w-5xl mx-auto px-6 lg:px-12 py-20 border-t border-zinc-200">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl font-serif font-medium mb-3">Design Process</h2>
+        <p class="text-zinc-500">A systematic approach to creating user-centered solutions</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Phase 1 -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-8 h-8 rounded-full bg-[#194471] text-white text-xs flex items-center justify-center font-medium">01</span>
+            <h3 class="font-semibold text-sm">Research &amp; Discovery</h3>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">User Research</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Persona Development</span>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-8 h-8 rounded-full bg-[#194471] text-white text-xs flex items-center justify-center font-medium">02</span>
+            <h3 class="font-semibold text-sm">Ideation &amp; Wireframing</h3>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Low-level Mapping</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Low-fidelity Prototyping</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">User Flow Mapping</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">User Flow Diagrams</span>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-8 h-8 rounded-full bg-[#194471] text-white text-xs flex items-center justify-center font-medium">03</span>
+            <h3 class="font-semibold text-sm">Visual Design</h3>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Design System Creation</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Interaction Development</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Design Reviews</span>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="flex flex-col gap-3">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="w-8 h-8 rounded-full bg-[#194471] text-white text-xs flex items-center justify-center font-medium">04</span>
+            <h3 class="font-semibold text-sm">Testing &amp; Iterations</h3>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Accessibility Testing</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Usability Testing</span>
+            <span class="px-3 py-2 rounded-lg bg-zinc-100 text-zinc-600 text-xs">Design Handoff</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Typography & Visual Tone (dark) ── -->
+    <section class="bg-zinc-900 text-white py-20">
+      <div class="max-w-5xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-serif font-medium mb-3">Typography &amp; Visual Tone</h2>
+          <p class="text-zinc-400">Consistency in typefaces creates a cohesive brand identity</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-16">
+          <div>
+            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-6">Playfair Display</p>
+            <p class="font-serif text-5xl font-medium leading-tight">Playfair Display</p>
+            <p class="font-serif text-zinc-400 mt-4 leading-relaxed tracking-wide text-sm">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+              abcdefghijklmnopqrstuvwxyz<br>
+              0123456789 !@#$%^&amp;*()
+            </p>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-widest text-zinc-500 mb-6">Inter</p>
+            <p class="text-5xl font-semibold leading-tight">Inter</p>
+            <p class="text-zinc-400 mt-4 leading-relaxed tracking-wide text-sm">
+              ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+              abcdefghijklmnopqrstuvwxyz<br>
+              0123456789 !@#$%^&amp;*()
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact Us & Gallery screens ── -->
+    <section class="py-20" style="background: linear-gradient(135deg, #6d5ae0 0%, #4a90d9 100%);">
+      <div class="max-w-6xl mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <!-- Contact Us mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-contact.png" alt="Tech Opp Contact Us page" class="w-full h-auto object-cover block">
+          </div>
+
+          <!-- Gallery mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-gallery.png" alt="Tech Opp Gallery page" class="w-full h-auto object-cover block">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Blog screens ── -->
+    <section class="py-20" style="background: linear-gradient(135deg, #6d5ae0 0%, #4a90d9 100%);">
+      <div class="max-w-6xl mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <!-- Blog list mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-blog.png" alt="Tech Opp Blog listing page" class="w-full h-auto object-cover block">
+          </div>
+
+          <!-- Blog post detail mockup -->
+          <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <div class="bg-[#e8eaf0] px-4 py-2.5 flex items-center gap-2">
+              <div class="flex gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-zinc-400"></span>
+              </div>
+            </div>
+            <img src="assets/tech-opp-blog-post.png" alt="Tech Opp Blog post detail" class="w-full h-auto object-cover block">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="border-t border-zinc-200 py-12 px-6 lg:px-12 bg-zinc-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <p class="text-xl font-bold tracking-tighter">O.</p>
+        <p class="text-sm text-zinc-500">&copy; <span id="year"></span> Oyinkansola. All rights reserved.</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/in/oyinkansola-ogundele-6071971a3/" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/ooooyinkannnn" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="mailto:ogundeleoyinkan@gmail.com" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        navbar.classList.add('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-zinc-200');
+      } else {
+        navbar.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-zinc-200');
+      }
+    }, { passive: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

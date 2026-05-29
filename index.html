@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyinkansola — UI/UX Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 1px #18181b; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col font-sans bg-white text-zinc-900">
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-12 lg:py-6 transition-all duration-300">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="#work" class="text-xl font-bold tracking-tighter">O.</a>
+      <div class="flex gap-8">
+        <a href="#work" id="nav-work" class="text-sm font-medium relative group transition-colors">
+          Work
+          <span id="ul-work" class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left transition-transform duration-300 scale-x-100"></span>
+        </a>
+        <a href="#about" id="nav-about" class="text-sm font-medium relative group transition-colors">
+          About
+          <span id="ul-about" class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
+        </a>
+        <a href="#contact" id="nav-contact" class="text-sm font-medium relative group transition-colors">
+          Contact
+          <span id="ul-contact" class="absolute -bottom-1 left-0 w-full h-0.5 bg-zinc-900 origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main ── -->
+  <main class="flex-1">
+    <div class="flex flex-col px-6 lg:px-12">
+
+      <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+      <section id="work" class="max-w-7xl mx-auto w-full pt-36 pb-24">
+        <div class="grid lg:grid-cols-[1fr_400px] gap-12 items-center">
+          <div>
+            <h1 class="text-5xl lg:text-8xl font-serif font-medium tracking-tight leading-[1.1]">
+              Hi, I'm <br>
+              <span class="italic text-zinc-400">Oyinkansola!</span>
+            </h1>
+            <p class="mt-8 text-xl lg:text-2xl text-zinc-500 max-w-2xl font-light">
+              A UI/UX designer who makes user-friendly, memorable, and appealing digital experiences. I combine strategy, empathy, and design thinking to create flawless products that users adore.
+            </p>
+            <div class="mt-12 flex flex-wrap gap-4">
+              <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 bg-zinc-900 text-white rounded-full hover:opacity-90 transition-opacity">
+                Get in touch
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 border border-zinc-900 text-zinc-900 rounded-full hover:bg-zinc-900 hover:text-white transition-colors">
+                Download Resume
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hidden lg:block aspect-square rounded-full overflow-hidden bg-zinc-100 border-8 border-zinc-100">
+            <img alt="Oyinkansola" class="w-full h-full object-cover" src="assets/profile-pic.jpg">
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════ FEATURED PROJECTS ══════════════════════ -->
+      <section class="max-w-7xl mx-auto w-full pb-24">
+        <div class="flex justify-between items-end mb-12">
+          <h2 class="text-3xl font-medium">Featured Projects</h2>
+          <a href="#contact" class="text-sm font-medium hover:underline underline-offset-4">Available for new projects</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+
+          <!-- 01 -->
+          <div class="group">
+            <a href="case-study-ayo.html" class="block overflow-hidden rounded-xl bg-zinc-100 relative">
+              <div class="overflow-hidden" style="aspect-ratio:4/3">
+                <img alt="AYO" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/project-ayo.png">
+              </div>
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div class="bg-white text-black p-4 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </div>
+              </div>
+            </a>
+            <div class="mt-6 flex justify-between items-start">
+              <div><h3 class="text-xl font-medium">AYO</h3><p class="text-zinc-500">Figma | UI Design | Web</p></div>
+              <span class="text-sm text-zinc-500">01</span>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="group">
+            <a href="case-study-tech-opp.html" class="block overflow-hidden rounded-xl bg-zinc-100 relative">
+              <div class="overflow-hidden" style="aspect-ratio:4/3">
+                <img alt="Tech Opp Africa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/project-tech-opp.png">
+              </div>
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div class="bg-white text-black p-4 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </div>
+              </div>
+            </a>
+            <div class="mt-6 flex justify-between items-start">
+              <div><h3 class="text-xl font-medium">Tech Opp Africa</h3><p class="text-zinc-500">Figma | UI Design | Web</p></div>
+              <span class="text-sm text-zinc-500">02</span>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="group">
+            <a href="case-study-ecowap.html" class="block overflow-hidden rounded-xl bg-zinc-100 relative">
+              <div class="overflow-hidden" style="aspect-ratio:4/3">
+                <img alt="ECOWAP" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/project-ecowap.png">
+              </div>
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div class="bg-white text-black p-4 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </div>
+              </div>
+            </a>
+            <div class="mt-6 flex justify-between items-start">
+              <div><h3 class="text-xl font-medium">ECOWAP</h3><p class="text-zinc-500">Figma | UI Design | Web</p></div>
+              <span class="text-sm text-zinc-500">03</span>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="group">
+            <a href="case-study-tech-opp-elearning.html" class="block overflow-hidden rounded-xl bg-zinc-100 relative">
+              <div class="overflow-hidden" style="aspect-ratio:4/3">
+                <img alt="Tech Opp E-Learning Platform" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/project-tech-opp-elearning.png">
+              </div>
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div class="bg-white text-black p-4 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </div>
+              </div>
+            </a>
+            <div class="mt-6 flex justify-between items-start">
+              <div><h3 class="text-xl font-medium">Tech Opp E-Learning Platform</h3><p class="text-zinc-500">Figma | UI Design | Web</p></div>
+              <span class="text-sm text-zinc-500">04</span>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="group">
+            <a href="#" class="block overflow-hidden rounded-xl bg-zinc-100 relative">
+              <div class="overflow-hidden" style="aspect-ratio:4/3">
+                <img alt="Doctor-Me" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/project-doctor-me.png">
+              </div>
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div class="bg-white text-black p-4 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 delay-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </div>
+              </div>
+            </a>
+            <div class="mt-6 flex justify-between items-start">
+              <div><h3 class="text-xl font-medium">Doctor-Me</h3><p class="text-zinc-500">Figma | UI Design | Mobile</p></div>
+              <span class="text-sm text-zinc-500">05</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ════════════════════════════ OTHER PROJECTS ════════════════════════ -->
+      <section class="max-w-7xl mx-auto w-full py-24 border-t border-zinc-200">
+        <h2 class="text-3xl font-medium mb-12">Other Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl bg-zinc-100" style="aspect-ratio:4/3">
+              <img alt="Hammiot Hotel Landing Page" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/halmot.png">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="mt-4"><h3 class="text-lg font-medium">Hammiot Hotel Landing Page</h3><p class="text-sm text-zinc-500">Website Design</p></div>
+          </div>
+
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl bg-zinc-100" style="aspect-ratio:4/3">
+              <img alt="Task Management Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/tmd.png">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="mt-4"><h3 class="text-lg font-medium">Task Management Dashboard</h3><p class="text-sm text-zinc-500">Website Design</p></div>
+          </div>
+
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl bg-zinc-100" style="aspect-ratio:4/3">
+              <img alt="Black and White KYC page" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/bw.png">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="mt-4"><h3 class="text-lg font-medium">Black and White KYC page</h3><p class="text-sm text-zinc-500">Mobile Design</p></div>
+          </div>
+
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl bg-zinc-100" style="aspect-ratio:4/3">
+              <img alt="KYC page" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/kyc.png">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="mt-4"><h3 class="text-lg font-medium">KYC page</h3><p class="text-sm text-zinc-500">App Design</p></div>
+          </div>
+
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl bg-zinc-100" style="aspect-ratio:4/3">
+              <img alt="Plant Shopping and Care Landing page" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/pc.png">
+              <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="mt-4"><h3 class="text-lg font-medium">Plant Shopping and Care Landing page</h3><p class="text-sm text-zinc-500">App Design</p></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════ ABOUT ═════════════════════════════ -->
+      <section id="about" class="max-w-7xl mx-auto w-full py-24 border-t border-zinc-200">
+
+        <!-- Who I Am -->
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-24 items-start mb-24">
+          <div class="overflow-hidden rounded-2xl bg-zinc-100" style="aspect-ratio:4/5">
+            <img alt="Oyinkansola" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="assets/profile-pic.jpg">
+          </div>
+          <div class="flex flex-col gap-8">
+            <h2 class="text-5xl lg:text-7xl font-serif">Who I Am</h2>
+            <div class="flex flex-col gap-6 text-lg text-zinc-500 leading-relaxed">
+              <p>I'm a passionate UI/UX designer with over 3 years of experience creating meaningful digital experiences. My journey started with a curiosity about how people create and design websites and games, and evolved into a mission to make digital products more human-centered.</p>
+              <p>I believe great design happens when empathy meets functionality. Every project begins with understanding user needs and business goals, then crafting solutions that are both beautiful and purposeful.</p>
+              <p>When I'm not designing, you'll find me reading a book or watching movies. I also enjoy watching videos on TikTok and catching up with the latest design trends on X.</p>
+            </div>
+            <div>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-block px-6 py-3 bg-zinc-900 text-white rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Approach -->
+        <div class="mb-24">
+          <h2 class="text-3xl font-medium mb-12">My Approach</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-6 rounded-2xl border border-zinc-200 hover:border-zinc-400 transition-colors">
+              <span class="text-sm font-mono text-zinc-400">01</span>
+              <h3 class="text-xl font-medium mt-2 mb-4">Discover &amp; Understand</h3>
+              <p class="text-zinc-500 leading-relaxed">Every project begins with clarity. I define the problem, align with business goals, and gather user insights through research, stakeholder conversations, and competitive analysis.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-zinc-200 hover:border-zinc-400 transition-colors">
+              <span class="text-sm font-mono text-zinc-400">02</span>
+              <h3 class="text-xl font-medium mt-2 mb-4">Plan &amp; Ideate</h3>
+              <p class="text-zinc-500 leading-relaxed">With a clear understanding of the challenge, I map user journeys, create user flows, and explore design directions. I sketch, wireframe, and build structure, focusing on usability and accessibility.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-zinc-200 hover:border-zinc-400 transition-colors">
+              <span class="text-sm font-mono text-zinc-400">03</span>
+              <h3 class="text-xl font-medium mt-2 mb-4">Design &amp; Prototype</h3>
+              <p class="text-zinc-500 leading-relaxed">I bring ideas to life through high-fidelity designs that reflect brand personality and visual clarity. Interactive prototypes help test functionality and user experience before development.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-zinc-200 hover:border-zinc-400 transition-colors">
+              <span class="text-sm font-mono text-zinc-400">04</span>
+              <h3 class="text-xl font-medium mt-2 mb-4">Refine &amp; Deliver</h3>
+              <p class="text-zinc-500 leading-relaxed">I test, gather feedback, and iterate on designs. Once finalized, I ensure smooth handoff to developers with detailed specs and documentation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & What I Can Do -->
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-24">
+          <div>
+            <h2 class="text-3xl font-medium mb-8">Tools &amp; Technology</h2>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2 rounded-full border border-zinc-200 text-sm hover:border-zinc-900 transition-colors cursor-default">Figma</span>
+              <span class="px-5 py-2 rounded-full border border-zinc-200 text-sm hover:border-zinc-900 transition-colors cursor-default">HTML</span>
+              <span class="px-5 py-2 rounded-full border border-zinc-200 text-sm hover:border-zinc-900 transition-colors cursor-default">CSS</span>
+              <span class="px-5 py-2 rounded-full border border-zinc-200 text-sm hover:border-zinc-900 transition-colors cursor-default">Tailwind</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-3xl font-medium mb-8">What I Can Do</h2>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2 rounded-full bg-zinc-900 text-white text-sm">Mobile Apps</span>
+              <span class="px-5 py-2 rounded-full bg-zinc-900 text-white text-sm">Web Design</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ═══════════════════════════════ CONTACT ════════════════════════════ -->
+      <section id="contact" class="max-w-7xl mx-auto w-full py-24 border-t border-zinc-200">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+
+          <!-- Left — info -->
+          <div class="flex flex-col gap-8">
+            <h2 class="text-5xl lg:text-8xl font-serif">
+              Let's Work <span class="italic">Together</span>
+            </h2>
+            <p class="text-xl text-zinc-500 leading-relaxed max-w-lg">
+              Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life!
+            </p>
+            <div class="flex flex-col gap-6 mt-4">
+              <a href="mailto:ogundeleoyinkan@gmail.com" class="flex items-center gap-4 text-lg hover:text-zinc-600 transition-colors">
+                <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </div>
+                <span>ogundeleoyinkan@gmail.com</span>
+              </a>
+              <div class="flex items-center gap-4 text-lg">
+                <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <span>Chester, United Kingdom</span>
+              </div>
+              <div class="flex items-center gap-4 text-lg">
+                <div class="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center flex-shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                </div>
+                <span class="text-zinc-500">Available for new projects</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://www.linkedin.com/in/oyinkansola-ogundele-6071971a3/" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full border border-zinc-200 hover:border-zinc-900 transition-colors text-sm">LinkedIn</a>
+              <a href="https://www.behance.net/oyinkanogundel" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full border border-zinc-200 hover:border-zinc-900 transition-colors text-sm">Behance</a>
+              <a href="https://github.com/ooooyinkannnn" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-full border border-zinc-200 hover:border-zinc-900 transition-colors text-sm">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Right — form -->
+          <div class="bg-zinc-50 p-8 lg:p-12 rounded-3xl border border-zinc-200">
+            <form class="flex flex-col gap-6" action="mailto:ogundeleoyinkan@gmail.com" method="POST" enctype="text/plain">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="flex flex-col gap-2">
+                  <label class="text-xs uppercase tracking-widest font-medium">Name</label>
+                  <input type="text" name="name" placeholder="Your name" required class="w-full h-12 px-4 rounded-md border border-zinc-200 bg-white text-sm placeholder:text-zinc-400 hover:border-zinc-300 transition-colors">
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="text-xs uppercase tracking-widest font-medium">Email</label>
+                  <input type="email" name="email" placeholder="your@email.com" required class="w-full h-12 px-4 rounded-md border border-zinc-200 bg-white text-sm placeholder:text-zinc-400 hover:border-zinc-300 transition-colors">
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-xs uppercase tracking-widest font-medium">Subject</label>
+                <input type="text" name="subject" placeholder="Project Inquiry" required class="w-full h-12 px-4 rounded-md border border-zinc-200 bg-white text-sm placeholder:text-zinc-400 hover:border-zinc-300 transition-colors">
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="text-xs uppercase tracking-widest font-medium">Message</label>
+                <textarea name="message" placeholder="Tell me about your project..." required rows="6" class="w-full px-4 py-3 rounded-md border border-zinc-200 bg-white text-sm placeholder:text-zinc-400 hover:border-zinc-300 transition-colors resize-none"></textarea>
+              </div>
+              <button type="submit" class="w-full h-14 mt-4 flex items-center justify-center gap-2 bg-zinc-900 text-white rounded-md text-base font-medium hover:bg-zinc-700 transition-colors group">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="border-t border-zinc-200 py-12 px-6 lg:px-12 bg-zinc-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <p class="text-xl font-bold tracking-tighter">O.</p>
+        <p class="text-sm text-zinc-500">&copy; <span id="year"></span> Oyinkansola. All rights reserved.</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/in/oyinkansola-ogundele-6071971a3/" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/ooooyinkannnn" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </a>
+        <a href="mailto:ogundeleoyinkan@gmail.com" class="text-zinc-500 hover:text-zinc-900 transition-colors" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Nav behaviour: background on scroll + active link highlighting ── -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navItems = {
+      work:    { link: document.getElementById('nav-work'),    ul: document.getElementById('ul-work') },
+      about:   { link: document.getElementById('nav-about'),   ul: document.getElementById('ul-about') },
+      contact: { link: document.getElementById('nav-contact'), ul: document.getElementById('ul-contact') },
+    };
+
+    function setActive(id) {
+      Object.entries(navItems).forEach(([key, { link, ul }]) => {
+        const isActive = key === id;
+        link.classList.toggle('text-zinc-900', isActive);
+        link.classList.toggle('text-zinc-500', !isActive);
+        ul.classList.toggle('scale-x-100', isActive);
+        ul.classList.toggle('scale-x-0', !isActive);
+      });
+    }
+
+    function onScroll() {
+      // Nav background
+      if (window.scrollY > 60) {
+        navbar.classList.add('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-zinc-200');
+      } else {
+        navbar.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-zinc-200');
+      }
+
+      // Active section — whichever section top is closest above the viewport midpoint
+      const mid = window.scrollY + window.innerHeight * 0.35;
+      const sections = ['contact', 'about', 'work'];
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= mid) { setActive(id); break; }
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
